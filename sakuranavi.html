@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Event Navi - イベント会社が選ぶ、オススメのイベント情報をお届け！</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .sakura-gradient {
+            background: linear-gradient(135deg, #ff6b9d 0%, #c44569 50%, #f8b500 100%);
+        }
+        .professional-gradient {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .sakura-accent {
+            color: #ff6b9d;
+        }
+        .sakura-bg {
+            background-color: #ff6b9d;
+        }
+        .sakura-bg:hover {
+            background-color: #e55a87;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg border-b-4 border-pink-500">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 sakura-gradient rounded-full flex items-center justify-center">
+                        <span class="text-2xl">🌸</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">Sakura Event Navi</h1>
+                        <p class="text-sm text-gray-600">サクラ・イベント・ナビ</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="text-gray-700 hover:text-pink-600 transition-colors font-medium">ホーム</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 transition-colors font-medium">展示会ナビ</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 transition-colors font-medium">トレンドレポート</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 transition-colors font-medium">プロのおすすめ</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 transition-colors font-medium">企業サポート</a>
+                </nav>
+                <button class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="sakura-gradient text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">イベント会社が選ぶ、<br>オススメのイベント情報をお届け！</h2>
+                <p class="text-xl mb-8 opacity-90 leading-relaxed">展示会プロデュースの現場で培った確かな目で、<br>ビジネス・カルチャー・ライフスタイルを彩るイベント情報を厳選してお届けします。</p>
+                
+                <!-- Search Bar -->
+                <div class="max-w-2xl mx-auto bg-white rounded-lg p-3 shadow-lg">
+                    <div class="flex items-center">
+                        <input type="text" placeholder="展示会名、業界、地域で検索..." class="flex-1 px-4 py-3 text-gray-700 bg-transparent outline-none">
+                        <button class="sakura-bg hover:bg-pink-600 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                            検索
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Introduction -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6">サクラインターナショナルが手がける、信頼のイベント情報サイト</h3>
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        私たちサクラインターナショナル株式会社は、<strong class="sakura-accent">40年以上</strong>にわたり国内外の展示会に出展する企業をサポートしてきたイベントのプロ集団です。
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        本サイト「Sakura Event Navi」は、そうした現場経験とネットワークを活かし、<strong class="sakura-accent">"本当に価値あるイベント情報"</strong>を皆さまにお届けしたく開設しました。
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        ビジネスチャンスを求める企業担当者、最新トレンドをキャッチしたいプロフェッショナル、そしてイベント業界に興味がある一般の皆さまへ。<br>
+                        Sakura Event Naviは、展示会・カンファレンス・ポップアップイベント、幅広いジャンルのイベント情報を「イベントのプロフェッショナル目線」で発信します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News and Topics Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-gray-800 mb-10 text-center">最新ニュース・トピックス</h3>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <!-- News Item 1 -->
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 border-l-4 border-blue-500">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full mr-2">ニュース</span>
+                        <span class="text-gray-500 text-sm">2024.01.15</span>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">東京ビッグサイト、2024年春の展示会スケジュール発表</h4>
+                    <p class="text-gray-600 text-sm mb-3">4月から6月にかけて開催される主要展示会の詳細スケジュールが公開されました。特に製造業関連の展示会が...</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">続きを読む →</a>
+                </div>
+
+                <!-- News Item 2 -->
+                <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-green-500 text-white text-xs px-2 py-1 rounded-full mr-2">トレンド</span>
+                        <span class="text-gray-500 text-sm">2024.01.12</span>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">AI・DX関連展示会への出展企業が前年比150%増</h4>
+                    <p class="text-gray-600 text-sm mb-3">2024年のテクノロジー系展示会では、AI・DXソリューションを提供する企業の出展が大幅に増加。来場者の関心も...</p>
+                    <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">続きを読む →</a>
+                </div>
+
+                <!-- News Item 3 -->
+                <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-6 border-l-4 border-purple-500">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-purple-500 text-white text-xs px-2 py-1 rounded-full mr-2">イベント</span>
+                        <span class="text-gray-500 text-sm">2024.01.10</span>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">「サステナブル・ライフスタイルEXPO 2024」開催決定</h4>
+                    <p class="text-gray-600 text-sm mb-3">環境配慮型製品・サービスに特化した新しい展示会が3月に開催。SDGsへの取り組みを紹介する企業が...</p>
+                    <a href="#" class="text-purple-600 hover:text-purple-800 text-sm font-medium">続きを読む →</a>
+                </div>
+
+                <!-- News Item 4 -->
+                <div class="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-lg p-6 border-l-4 border-orange-500">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-orange-500 text-white text-xs px-2 py-1 rounded-full mr-2">業界動向</span>
+                        <span class="text-gray-500 text-sm">2024.01.08</span>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">展示会業界、デジタル化とリアル体験の融合が加速</h4>
+                    <p class="text-gray-600 text-sm mb-3">VR・ARを活用したバーチャル展示と実際の展示会を組み合わせたハイブリッド型イベントが注目を集めています...</p>
+                    <a href="#" class="text-orange-600 hover:text-orange-800 text-sm font-medium">続きを読む →</a>
+                </div>
+
+                <!-- News Item 5 -->
+                <div class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-lg p-6 border-l-4 border-teal-500">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-teal-500 text-white text-xs px-2 py-1 rounded-full mr-2">レポート</span>
+                        <span class="text-gray-500 text-sm">2024.01.05</span>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">2023年展示会来場者数ランキング発表</h4>
+                    <p class="text-gray-600 text-sm mb-3">昨年最も多くの来場者を集めた展示会TOP10を発表。コロナ禍からの回復傾向と新たなトレンドが...</p>
+                    <a href="#" class="text-teal-600 hover:text-teal-800 text-sm font-medium">続きを読む →</a>
+                </div>
+
+                <!-- News Item 6 -->
+                <div class="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full mr-2">お知らせ</span>
+                        <span class="text-gray-500 text-sm">2024.01.03</span>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">サクラインターナショナル、新サービス「展示会成果分析」開始</h4>
+                    <p class="text-gray-600 text-sm mb-3">出展効果を数値化し、ROI向上をサポートする新サービスの提供を開始しました。データドリブンな展示会戦略を...</p>
+                    <a href="#" class="text-red-600 hover:text-red-800 text-sm font-medium">続きを読む →</a>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="sakura-bg hover:bg-pink-600 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                    すべてのニュースを見る
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Banner Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-gray-800 mb-10 text-center">企業・個人サポート</h3>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 sakura-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🏢</span>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">イベント出展をお考えの企業様</h4>
+                    <p class="text-sm text-gray-600 mb-4">展示会出展のご相談・サポート</p>
+                    <button class="sakura-bg hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                        詳細はこちら
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 sakura-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🎬</span>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">イベントディレクターになりたい方</h4>
+                    <p class="text-sm text-gray-600 mb-4">キャリア情報・求人案内</p>
+                    <button class="sakura-bg hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                        詳細はこちら
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 sakura-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📋</span>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">イベントブースの工程管理者になりたい方</h4>
+                    <p class="text-sm text-gray-600 mb-4">専門スキル・求人情報</p>
+                    <button class="sakura-bg hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                        詳細はこちら
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 sakura-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">👥</span>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">イベントスタッフとして働きたい方</h4>
+                    <p class="text-sm text-gray-600 mb-4">スタッフ募集・研修情報</p>
+                    <button class="sakura-bg hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                        詳細はこちら
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section class="professional-gradient text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-6">イベントには、人・情報・未来が集まっています。</h3>
+            <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto leading-relaxed">
+                私たちは、「出展企業の価値を伝える」プロとしての視点で、<br>
+                これからのイベントとの出会いをサポートしていきます。
+            </p>
+            
+            <div class="max-w-md mx-auto bg-white rounded-lg p-3">
+                <div class="flex">
+                    <input type="email" placeholder="メールアドレスを入力" class="flex-1 px-4 py-2 text-gray-700 bg-transparent outline-none">
+                    <button class="sakura-bg hover:bg-pink-600 text-white px-6 py-2 rounded-md font-medium transition-colors">
+                        登録
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-2xl">🌸</span>
+                        <div>
+                            <h4 class="text-xl font-bold">Sakura Event Navi</h4>
+                            <p class="text-sm text-gray-400">サクラ・イベント・ナビ</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">イベントのプロが厳選した価値ある情報をお届けします。</p>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">イベント情報</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">展示会・見本市ナビ</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">業界トレンドレポート</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">プロのおすすめ</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">企業インタビュー</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">企業サポート</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">出展サポート</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">キャリア情報</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">スタッフ募集</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">会社情報</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">サクラインターナショナル</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">会社概要</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">利用規約</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Sakura International Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search functionality
+        document.querySelector('input[type="text"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const searchTerm = this.value;
+                if (searchTerm) {
+                    alert(`「${searchTerm}」で検索します。展示会・イベント情報を検索中...`);
+                }
+            }
+        });
+
+        // Newsletter signup
+        document.querySelector('input[type="email"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const email = this.value;
+                if (email) {
+                    alert('ありがとうございます！最新のイベント情報をお送りします。');
+                    this.value = '';
+                }
+            }
+        });
+
+        // Content section buttons
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('詳細を見る') || button.textContent.includes('詳細はこちら')) {
+                button.addEventListener('click', function() {
+                    const title = this.closest('div').querySelector('h4').textContent;
+                    alert(`${title}のページに移動します。`);
+                });
+            }
+        });
+
+        // Search button
+        document.querySelector('button:contains("検索")').addEventListener('click', function() {
+            const searchInput = document.querySelector('input[type="text"]');
+            const searchTerm = searchInput.value;
+            if (searchTerm) {
+                alert(`「${searchTerm}」で検索します。展示会・イベント情報を検索中...`);
+            } else {
+                alert('検索キーワードを入力してください。');
+            }
+        });
+
+        // News links
+        document.querySelectorAll('a').forEach(link => {
+            if (link.textContent.includes('続きを読む')) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const title = this.closest('div').querySelector('h4').textContent;
+                    alert(`「${title}」の詳細記事を表示します。`);
+                });
+            }
+        });
+
+        // All news button
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('すべてのニュースを見る')) {
+                button.addEventListener('click', function() {
+                    alert('ニュース一覧ページに移動します。');
+                });
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9630dab6529c19f8',t:'MTc1MzE2NTQ1OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
