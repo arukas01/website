@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niche Japan - Discover Deep Japan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'emerald-deep': '#064e3b',
+                        'coral-warm': '#ea580c',
+                        'sage-light': '#f0fdf4',
+                        'slate-elegant': '#334155',
+                        'charcoal-dark': '#1e293b'
+                    },
+                    fontFamily: {
+                        'japanese': ['Noto Serif JP', 'serif'],
+                        'sans-jp': ['Noto Sans JP', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .traditional-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='0.05'%3E%3Cpath d='M30 30c0-16.569 13.431-30 30-30v60c-16.569 0-30-13.431-30-30zM0 30c0 16.569 13.431 30 30 30V0C13.431 0 0 13.431 0 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+       
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(6, 78, 59, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-sage-light to-emerald-50 font-sans-jp">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-emerald-deep to-charcoal-dark text-white shadow-xl">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="text-3xl font-japanese font-bold">🌿</div>
+                    <div>
+                        <h1 class="text-2xl font-japanese font-bold">Niche Japan</h1>
+                        <p class="text-coral-warm text-sm">Discover Deep Japan</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="niche_top.html" class="hover:text-coral-warm transition-colors">ホーム</a>
+                    <a href="#categories" class="hover:text-coral-warm transition-colors">カテゴリー</a>
+                    <a href="niche_top.html#interviews" class="hover:text-coral-warm transition-colors">インタビュー</a>
+                    <a href="#contact" class="hover:text-coral-warm transition-colors">お問い合わせ</a>
+                </nav>
+                <button class="md:hidden text-coral-warm">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+<!-- Hero Section -->
+<section id="home" class="traditional-pattern py-20">
+  <div class="container mx-auto px-6">
+    
+    <!-- 見出し -->
+    <h2 class="text-3xl md:text-5xl font-japanese font-bold text-emerald-deep mb-6 text-center">
+      私が“日本で働く”ことを選んだ理由
+    </h2>
+
+    <!-- プロフィール -->
+    <p class="text-charcoal/80 mb-6">
+      イギリスの大学院にて国際人事を専攻し、異文化マネジメントやグローバル人材戦略を学ばれた劉香瑩さん（仮称）。修了後は日本でのキャリアを選択され、前職では貿易商社の人事スペシャリストとして、採用業務や人事制度の企画・運用に従事されました。現在は都内の人材紹介会社にて、求職者と企業の最適なマッチングに日々尽力しておられます。
+    </p>
+
+    <!-- グリッドレイアウト -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+      <!-- テキストセクション -->
+      <div>
+
+        <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">Q1. なぜ日本で働くことを選ばれたのですか？</h3>
+        <p class="text-charcoal/80 mb-6">
+          日本は安全で整った生活環境に加えて、人事制度や職場文化にも独自性があり、国際人事を学んだ身として深く関心がございました。日本企業での実務経験を通じて、多様な人材マネジメントを理解し、自分の専門性を高めていきたいと考えたことが最大の理由です。
+        </p>
+
+        <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">就職活動ではどのようなご苦労がありましたか？</h3>
+        <p class="text-charcoal/80 mb-6">
+          日本特有の就職プロセス（履歴書、面接マナー、時期の制約など）に最初は戸惑いがありました。外国出身者として語学力や文化適応力が求められ、プレッシャーを感じる場面もございましたが、N1取得後も日本語の敬語・文章力を継続して磨きながら、各種就活イベントや企業説明会にも積極的に参加いたしました。
+        </p>
+        
+      </div>
+
+<!-- 画像セクション -->
+<div class="relative rounded-xl overflow-hidden shadow-xl w-full aspect-[4/3]">
+  <img src="contents1.png" alt="Smiling business woman pointing" class="w-full h-full object-cover">
+</div>
+
+    </div>
+
+    <!-- その他の雇用制度 -->
+    <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">新卒一括採用</h3>
+    <p class="text-charcoal/80 mb-6">
+      日本の企業は、新卒一括採用を行うことが一般的です。毎年春に大学を卒業する学生を一斉に採用し、同時期に入社します。これにより、同期の絆が深まり、一括研修を通じて時間やリソースが効率的に活用されるため、職場内のサポート体制が強化されます。
+    </p>
+
+    <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">メンバーシップ型雇用</h3>
+    <p class="text-charcoal/80 mb-6">
+      主に欧米諸国で採用されるジョブ型雇用とは異なり、日本の企業ではメンバーシップ型雇用が採用されています。特定の職務に限定されず、企業全体の一員として雇用される形態です。従業員は様々な部署や役割を経験し、企業全体の成長に貢献することが期待されます。これにより、柔軟な人材配置が可能となり、企業の競争力が向上します。
+    </p>
+
+    <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">研修制度</h3>
+    <p class="text-charcoal/80 mb-6">
+      日本の企業は長期雇用を前提とし、将来を見据えた視点で従業員を育成することが一般的です。年齢を重ねるにつれて、実務経験やマネジメント能力がより重要視される傾向があります。
+    </p>
+
+    <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">時間管理</h3>
+    <p class="text-charcoal/80 mb-6">
+      日本の企業文化には、時間管理が重要視されています。多くの従業員が定時を過ぎても働くことがあり、残業が発生することも少なくありません。また、日本では遅刻が厳しく禁じられており、時間厳守が強く求められます。しかし、近年では働き方改革が進められ、長時間労働の是正やワークライフバランスの向上が求められています。
+    </p>
+
+    <!-- 総括 -->
+    <p class="text-charcoal/80 mb-6">
+      日本の雇用文化は、他国とは異なる独自の制度や慣習が根付いており、長期的な関係性や安定したキャリア形成を重視する傾向があります。これらの制度のもとでは、企業内での経験やスキルの蓄積が重視されています。そのため、日本の労働環境を深く理解し、自身のキャリアを築くための選択肢を慎重に考えることが重要です。
+    </p>
+
+  </div>
+</section>
+
+<!-- Categories -->
+<section id="categories" class="py-16 bg-gradient-to-r from-sage-light to-emerald-50">
+    <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-japanese font-bold text-emerald-deep text-center mb-12">カテゴリー別記事一覧</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <a href="category_habits" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">🙏</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">習慣・マナー</h4>
+                <p class="text-slate-elegant text-sm">日本独特のマナーや暗黙のルールを詳しく解説</p>
+            </a>
+
+            <a href="category_festivals.html" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">🎋</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">伝統行事・イベント</h4>
+                <p class="text-slate-elegant text-sm">季節の行事や地域の祭りの深い意味を探る</p>
+            </a>
+
+            <a href="/category/food" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">🍱</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">食文化の奥深さ</h4>
+                <p class="text-slate-elegant text-sm">料理の背景にある歴史や地域性を紐解く</p>
+            </a>
+
+            <a href="/category/regional-customs" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">🏔️</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">地方独自の風習</h4>
+                <p class="text-slate-elegant text-sm">各地域に根ざした独特な文化や慣習を紹介</p>
+            </a>
+
+            <a href="/category/history" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">📜</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">歴史背景と由来</h4>
+                <p class="text-slate-elegant text-sm">現代に残る文化のルーツを歴史から読み解く</p>
+            </a>
+
+            <a href="/category/language" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">🗣️</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">言葉・オノマトペ</h4>
+                <p class="text-slate-elegant text-sm">日本語の奥深さと表現の豊かさを探求</p>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Service Banner -->
+    <section class="py-16 bg-gradient-to-r from-charcoal-dark to-emerald-deep">
+        <div class="container mx-auto px-6 text-center text-white">
+            <h3 class="text-3xl font-japanese font-bold mb-8">あなたの暮らしを、もっと楽しく、もっと快適に。<br>私たちにできることはありませんか？</h3>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 hover-lift border border-white border-opacity-20">
+                    <div class="text-3xl mb-4">💼</div>
+                    <h4 class="font-semibold mb-2">お仕事をお探しの方</h4>
+                    <button class="text-coral-warm underline hover:no-underline">詳しく見る</button>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 hover-lift border border-white border-opacity-20">
+                    <div class="text-3xl mb-4">🤔</div>
+                    <h4 class="font-semibold mb-2">日本のマナーや文化について聞いてみたい方</h4>
+                    <button class="text-coral-warm underline hover:no-underline">詳しく見る</button>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 hover-lift border border-white border-opacity-20">
+                    <div class="text-3xl mb-4">🏠</div>
+                    <h4 class="font-semibold mb-2">生活インフラについて相談したい方</h4>
+                    <button class="text-coral-warm underline hover:no-underline">詳しく見る</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-br from-sage-light to-emerald-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h3 class="text-3xl font-japanese font-bold text-emerald-deep mb-8">お問い合わせ</h3>
+                <p class="text-slate-elegant mb-8">ご質問やご相談がございましたら、お気軽にお問い合わせください。</p>
+                
+                <form class="bg-white rounded-lg shadow-xl p-8 border border-gray-100">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-emerald-deep font-semibold mb-2">お名前</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-coral-warm focus:ring-1 focus:ring-coral-warm" placeholder="山田太郎">
+                        </div>
+                        <div>
+                            <label class="block text-emerald-deep font-semibold mb-2">メールアドレス</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-coral-warm focus:ring-1 focus:ring-coral-warm" placeholder="example@email.com">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="block text-emerald-deep font-semibold mb-2">お問い合わせ内容</label>
+                        <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-coral-warm focus:ring-1 focus:ring-coral-warm" placeholder="お問い合わせ内容をご記入ください"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-emerald-deep text-white py-4 rounded-lg font-semibold hover:bg-coral-warm hover:text-emerald-deep transition-all transform hover:scale-105">
+                        送信する
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-charcoal-dark to-emerald-deep text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="text-2xl">🌿</div>
+                        <h4 class="text-xl font-japanese font-bold">Niche Japan</h4>
+                    </div>
+                    <p class="text-sm opacity-90">深い日本文化を発見する旅へ</p>
+                </div>
+                
+                <div>
+                    <h5 class="font-semibold mb-4">カテゴリー</h5>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:text-coral-warm">習慣・マナー</a></li>
+                        <li><a href="#" class="hover:text-coral-warm">伝統行事・祭り</a></li>
+                        <li><a href="#" class="hover:text-coral-warm">食文化</a></li>
+                        <li><a href="#" class="hover:text-coral-warm">地方の風習</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="font-semibold mb-4">サービス</h5>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:text-coral-warm">転職サポート</a></li>
+                        <li><a href="#" class="hover:text-coral-warm">文化相談</a></li>
+                        <li><a href="#" class="hover:text-coral-warm">生活サポート</a></li>
+                        <li><a href="#" class="hover:text-coral-warm">採用情報</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="font-semibold mb-4">フォローする</h5>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-coral-warm transition-colors">📱</a>
+                        <a href="#" class="text-2xl hover:text-coral-warm transition-colors">📸</a>
+                        <a href="#" class="text-2xl hover:text-coral-warm transition-colors">🐦</a>
+                        <a href="#" class="text-2xl hover:text-coral-warm transition-colors">💼</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-90">
+                <p>&copy; 2024 Niche Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('お問い合わせありがとうございます。内容を確認後、ご連絡いたします。');
+            this.reset();
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96409e5fc2b9fc9a',t:'MTc1MzMzMDc2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+
+
