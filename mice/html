@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARUKAS CAREER | グローバル人材専門の転職エージェント</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        darkblue: '#0A2342',
+                        cream: '#F8F5F0',
+                        charcoal: '#333333',
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #F8F5F0;
+            color: #333333;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(10, 35, 66, 0.85) 0%, rgba(10, 35, 66, 0.7) 100%);
+        }
+        .gold-underline {
+            position: relative;
+        }
+        .gold-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background-color: #D4AF37;
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .btn-gold {
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            background-color: #0A2342;
+            color: #D4AF37;
+        }
+        .stats-item {
+            position: relative;
+        }
+        .stats-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background-color: rgba(212, 175, 55, 0.3);
+        }
+        @media (max-width: 768px) {
+            .stats-item:not(:last-child)::after {
+                display: none;
+            }
+        }
+        .image-overlay {
+            position: relative;
+        }
+        .image-overlay::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(10, 35, 66, 0.1), rgba(10, 35, 66, 0.6));
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card:hover .feature-image {
+            transform: scale(1.05);
+        }
+        .feature-image {
+            transition: transform 0.5s ease;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+
+<a href="/" class="flex items-center">
+        <!-- ロゴ画像は高さを固定 -->
+        <img src="logo.png" alt="サクラインターナショナル ロゴ" class="h-12 w-auto">
+      </a>
+
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="candidate.html" class="nav-link font-medium">求職者の方へ</a>
+                <a href="recruiter.html" class="nav-link font-medium">採用企業様へ</a>
+                <a href=sakuranavi.html class="nav-link font-medium">展示会・イベント情報サイト「Sakura Evnet Navi」</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-charcoal focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 py-2 space-y-3">
+                <a href="candidate.html" class="nav-link font-medium">求職者の方へ</a>
+                <a href="企業側.html" class="nav-link font-medium">採用企業様へ</a>
+                <a href=sakuranavi.html class="nav-link font-medium">展示会・イベント情報サイト「Sakura Evnet Navi」</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+   <!-- Jobs Section with Images -->
+    <section id="jobs" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-darkblue mb-6 inline-block gold-underline">
+                    海外勤務求人特集
+                </h2>
+                <p class="text-lg text-charcoal/80 mt-8">
+                    日本から海外へ挑戦したい方に向け、現地勤務や駐在が可能な求人を厳選してご紹介します。<br>
+                    グローバルに働きたい方におすすめです。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-cream rounded-xl overflow-hidden shadow-lg transition-transform hover:transform hover:scale-105">
+                    <div class="h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('globalmarketer.png')"></div>
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-darkblue/80"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <div class="text-gold font-serif font-bold text-xl">外資系企業</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">グローバルマーケティング</h3>
+                        <div class="flex items-center mb-2">
+
+                        </div>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center text-sm">
+                                <span class="font-medium w-20">年収:</span>
+                                <span>600万円〜800万円</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <span class="font-medium w-20">勤務地:</span>
+                                <span>東京（リモート可）</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <span class="font-medium w-20">言語:</span>
+                                <span>英語（ビジネスレベル）</span>
+                            </li>
+                        </ul>
+                        <a href="job.html">
+                        <button class="w-full bg-darkblue text-white hover:bg-gold hover:text-darkblue transition-colors py-2 rounded-md font-medium">
+                            詳細を見る
+                        </button></a>
+                    </div>
+                </div>
+
+                <div class="bg-cream rounded-xl overflow-hidden shadow-lg transition-transform hover:transform hover:scale-105">
+                    <div class="h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('salesmanager.png')"></div>
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-darkblue/80"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <div class="text-gold font-serif font-bold text-xl">日系グローバル企業</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">海外営業マネージャー</h3>
+                        <div class="flex items-center mb-2">
+
+                        </div>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center text-sm">
+                                <span class="font-medium w-20">年収:</span>
+                                <span>700万円〜900万円</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <span class="font-medium w-20">勤務地:</span>
+                                <span>大阪</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <span class="font-medium w-20">言語:</span>
+                                <span>英語・中国語いずれか</span>
+                            </li>
+                        </ul>
+                        <a href="job.html">
+                        <button class="w-full bg-darkblue text-white hover:bg-gold hover:text-darkblue transition-colors py-2 rounded-md font-medium">
+                            詳細を見る
+                        </button></a>
+                    </div>
+                </div>
+
+                <div class="bg-cream rounded-xl overflow-hidden shadow-lg transition-transform hover:transform hover:scale-105">
+                    <div class="h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('bilingualPM.png')"></div>
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-darkblue/80"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <div class="text-gold font-serif font-bold text-xl">MICE業界</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">国際イベントの企画営業（Mg候補）</h3>
+                        <div class="flex items-center mb-2">
+
+
+                        </div>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center text-sm">
+                                <span class="font-medium w-20">年収:</span>
+                                <span>600万円〜800万円</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <span class="font-medium w-20">勤務地:</span>
+                                <span>東京/大阪</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <span class="font-medium w-20">言語:</span>
+                                <span>英語・中国語いずれか</span>
+                            </li>
+                        </ul>
+                        <a href="job.html">
+                        <button class="w-full bg-darkblue text-white hover:bg-gold hover:text-darkblue transition-colors py-2 rounded-md font-medium">
+                            詳細を見る
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section id="contact" class="py-20 bg-cover bg-center relative" style="background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1920\' height=\'1080\' viewBox=\'0 0 1920 1080\'><rect width=\'1920\' height=\'1080\' fill=\'%230A2342\'/><circle cx=\'960\' cy=\'540\' r=\'400\' fill=\'%23D4AF37\' fill-opacity=\'0.05\'/><circle cx=\'960\' cy=\'540\' r=\'300\' fill=\'%23D4AF37\' fill-opacity=\'0.05\'/><circle cx=\'960\' cy=\'540\' r=\'200\' fill=\'%23D4AF37\' fill-opacity=\'0.05\'/></svg>')">
+        <div class="absolute inset-0 bg-darkblue/50"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
+                        あなたの<span class="text-gold">グローバルキャリア</span>を始めましょう
+                    </h2>
+                    <p class="text-white/80 text-lg">
+                        ARUKAS人材サービス事業部は、単なる求人紹介ではなく、あなたの人生に寄り添うキャリアパートナーです。<br>
+                        語学力や専門性を活かしたい方、これからグローバルな環境に挑戦したい方、どんなステージの方でも歓迎いたします。
+                    </p>
+                </div>
+
+<div class="flex justify-center">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiHxd3rWPlGNOrlgO6CWpcpFOvLDY1J7ul3jydcx8PcKsDGA/viewform?embedded=true"
+    width="640" height="1375" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…
+  </iframe>
+</div>
+    </section>
+
+  <!-- Footer -->
+    <footer class="bg-darkblue text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-serif font-bold">
+                        <span class="text-gold">ARUKAS</span>CAREER <div class="text-gray-400 text-sm">produced by Sakura International</div>
+                    </div>
+
+                </div>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="https://career.sakurain.co.jp/policy/" class="hover:text-gold transition-colors">求人･求職者の皆様へ</a>
+                    <a href="https://career.sakurain.co.jp/privacy/" class="hover:text-gold transition-colors"> 個人情報の取扱いについて</a>
+                    <a href="https://career.sakurain.co.jp/terms/" class="hover:text-gold transition-colors">利用規約</a>
+                    <a href="https://www.sakurain.co.jp/privacyPolicy/?_ga=2.210146133.1754386174.1753166003-1342308711.1742271207" class="hover:text-gold transition-colors">個人情報保護方針</a>
+                    <a href="https://career.sakurain.co.jp/margin/" class="hover:text-gold transition-colors">マージン率等の情報提供</a>
+                </div>
+            </div>
+            <hr class="my-8 border-gray-700">
+            <div class="text-center text-gray-400 text-sm">
+                &copy; Copyright(c) 2025 Sakura International Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real implementation, you would send the form data to a server
+            // For this demo, we'll just show the success message
+            formSuccess.classList.remove('hidden');
+            contactForm.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                formSuccess.classList.add('hidden');
+            }, 5000);
+        });
+
+        // Add fixed header shadow on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9630b33fa1fa1532',t:'MTc1MzE2Mzg0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
