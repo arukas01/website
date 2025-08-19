@@ -126,21 +126,27 @@
     </style>
 </head>
 <body>
+    
     <!-- Navigation -->
     <nav class="bg-white shadow-md fixed w-full z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
 
-<a href="/" class="flex items-center">
-        <!-- ロゴ画像は高さを固定 -->
-        <img src="logo.png" alt="サクラインターナショナル ロゴ" class="h-12 w-auto">
-      </a>
-
+                <a href="/website/candidate/index.html" class="flex items-center">
+                    <!-- ロゴ画像は高さを固定 -->
+                    <img src="/website/logo.png" alt="ARUKAS CAREER ロゴ" class="h-12 w-auto">
+                </a>
             </div>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="candidate.html" class="nav-link font-medium">求職者の方へ</a>
-                <a href="recruiter.html" class="nav-link font-medium">採用企業様へ</a>
-                <a href=sakuranavi.html class="nav-link font-medium">展示会・イベント情報サイト「Sakura Evnet Navi」</a>
+                <a href="/website/candidate/index.html" class="nav-link font-medium">求職者の方へ</a>
+                <a href="/website/recruiter/index.html" class="nav-link font-medium">採用企業様へ</a>
+                <a href="/website/nichejapan/index.html" target="_blank" class="nav-link font-medium flex items-center gap-1">日本文化の情報発信サイト「Niche Japan」
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="6" width="14" height="14" rx="2" fill="#B0BEC5"/>
+                        <rect x="6" y="3" width="15" height="15" rx="2" fill="#ECEFF1"/>
+                        <path d="M14 5h5v5h-2V8.41l-6.3 6.3-1.4-1.41 6.3-6.3H14V5z" fill="#000000"/>
+                        </svg>
+                </a>
             </div>
             <div class="md:hidden">
                 <button id="menu-toggle" class="text-charcoal focus:outline-none">
@@ -150,20 +156,18 @@
                 </button>
             </div>
         </div>
+        
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
             <div class="container mx-auto px-4 py-2 space-y-3">
-                <a href="candidate.html" class="nav-link font-medium">求職者の方へ</a>
-                <a href="企業側.html" class="nav-link font-medium">採用企業様へ</a>
-                <a href=sakuranavi.html class="nav-link font-medium">展示会・イベント情報サイト「Sakura Evnet Navi」</a>
+                <a href="/website.candidate/index.html" class="nav-link font-medium">求職者の方へ</a>
+                <a href="/website/recruiterindex.html" class="nav-link font-medium">採用企業様へ</a>
+                <a href="/website/nichejapan/index.html" class="nav-link font-medium">日本文化の情報発信サイト「Niche Japan」</a>
             </div>
         </div>
     </nav>
 
-
-
-
-   <!-- Jobs Section with Images -->
+    <!-- Jobs Section with Images -->
     <section id="jobs" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center mb-16">
@@ -171,15 +175,15 @@
                     MICE特集
                 </h2>
                 <p class="text-lg text-charcoal/80 mt-8">
-                    日本から海外へ挑戦したい方に向け、現地勤務や駐在が可能な求人を厳選してご紹介します。<br>
-                    グローバルに働きたい方におすすめです。
+                    提携求人を含め、豊富な選択肢からあなたに最適なポジションをご提案。<br>
+                    業界・職種・勤務地・働き方など、多角的な視点でキャリアの可能性を広げます。
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-cream rounded-xl overflow-hidden shadow-lg transition-transform hover:transform hover:scale-105">
                     <div class="h-48 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('globalmarketer.png')"></div>
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/website/candidate/workabroad/globalmarketer.png')"></div>
                         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-darkblue/80"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-4">
                             <div class="text-gold font-serif font-bold text-xl">外資系企業</div>
@@ -204,7 +208,7 @@
                                 <span>英語（ビジネスレベル）</span>
                             </li>
                         </ul>
-                        <a href="job.html">
+                        <a href="/website/candidate/job/sample.html">
                         <button class="w-full bg-darkblue text-white hover:bg-gold hover:text-darkblue transition-colors py-2 rounded-md font-medium">
                             詳細を見る
                         </button></a>
@@ -213,7 +217,7 @@
 
                 <div class="bg-cream rounded-xl overflow-hidden shadow-lg transition-transform hover:transform hover:scale-105">
                     <div class="h-48 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('salesmanager.png')"></div>
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/website/candidate/diversity/salesmanager.png')"></div>
                         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-darkblue/80"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-4">
                             <div class="text-gold font-serif font-bold text-xl">日系グローバル企業</div>
@@ -238,7 +242,7 @@
                                 <span>英語・中国語いずれか</span>
                             </li>
                         </ul>
-                        <a href="job.html">
+                        <a href="/website/candidate/job/sample.html">
                         <button class="w-full bg-darkblue text-white hover:bg-gold hover:text-darkblue transition-colors py-2 rounded-md font-medium">
                             詳細を見る
                         </button></a>
@@ -247,7 +251,7 @@
 
                 <div class="bg-cream rounded-xl overflow-hidden shadow-lg transition-transform hover:transform hover:scale-105">
                     <div class="h-48 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('bilingualPM.png')"></div>
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/website/candidate/mice/bilingualPM.png')"></div>
                         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-darkblue/80"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-4">
                             <div class="text-gold font-serif font-bold text-xl">MICE業界</div>
@@ -273,7 +277,7 @@
                                 <span>英語・中国語いずれか</span>
                             </li>
                         </ul>
-                        <a href="job.html">
+                        <a href="/website/candidate/job/sample.html">
                         <button class="w-full bg-darkblue text-white hover:bg-gold hover:text-darkblue transition-colors py-2 rounded-md font-medium">
                             詳細を見る
                         </button></a>
@@ -304,30 +308,28 @@
 </div>
     </section>
 
-  <!-- Footer -->
-    <footer class="bg-darkblue text-white py-12 px-4">
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="text-2xl font-serif font-bold">
-                        <span class="text-gold">ARUKAS</span>CAREER <div class="text-gray-400 text-sm">produced by Sakura International</div>
-                    </div>
-
-                </div>
-                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-                    <a href="https://career.sakurain.co.jp/policy/" class="hover:text-gold transition-colors">求人･求職者の皆様へ</a>
-                    <a href="https://career.sakurain.co.jp/privacy/" class="hover:text-gold transition-colors"> 個人情報の取扱いについて</a>
-                    <a href="https://career.sakurain.co.jp/terms/" class="hover:text-gold transition-colors">利用規約</a>
-                    <a href="https://www.sakurain.co.jp/privacyPolicy/?_ga=2.210146133.1754386174.1753166003-1342308711.1742271207" class="hover:text-gold transition-colors">個人情報保護方針</a>
-                    <a href="https://career.sakurain.co.jp/margin/" class="hover:text-gold transition-colors">マージン率等の情報提供</a>
-                </div>
-            </div>
-            <hr class="my-8 border-gray-700">
-            <div class="text-center text-gray-400 text-sm">
-                &copy; Copyright(c) 2025 Sakura International Inc. All rights reserved.
-            </div>
-        </div>
-    </footer>
+<!-- Footer -->
+<footer class="bg-white text-darkblue py-12 px-4">
+      <div class="container mx-auto">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="mb-6 md:mb-0 flex flex-col items-center md:items-start">
+              <!-- ロゴ画像（高さを調整） -->
+              <img src="/website/logo.png" alt="ARUKAS CAREER ロゴ" class="h-10 w-auto mb-2">
+              </div>
+          </div>
+          <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+              <a href="https://career.sakurain.co.jp/policy/" class="hover:text-gold transition-colors">求人･求職者の皆様へ</a>
+              <a href="https://career.sakurain.co.jp/privacy/" class="hover:text-gold transition-colors"> 個人情報の取扱いについて</a>
+              <a href="https://career.sakurain.co.jp/terms/" class="hover:text-gold transition-colors">利用規約</a>
+              <a href="https://www.sakurain.co.jp/privacyPolicy/?_ga=2.210146133.1754386174.1753166003-1342308711.1742271207" class="hover:text-gold transition-colors">個人情報保護方針</a>
+              <a href="https://career.sakurain.co.jp/margin/" class="hover:text-gold transition-colors">マージン率等の情報提供</a>
+          </div>
+      </div>
+      <hr class="my-8 border-gray-700">
+      <div class="text-center text-gray-400 text-sm">
+          &copy; Copyright(c) 2025 Sakura International Inc. All rights reserved.
+      </div>
+</footer>
 
     <script>
         // Mobile menu toggle
