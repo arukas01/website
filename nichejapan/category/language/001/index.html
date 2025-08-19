@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niche Japan - Discover Deep Japan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'emerald-deep': '#064e3b',
+                        'coral-warm': '#ea580c',
+                        'sage-light': '#f0fdf4',
+                        'slate-elegant': '#334155',
+                        'charcoal-dark': '#1e293b'
+                    },
+                    fontFamily: {
+                        'japanese': ['Noto Serif JP', 'serif'],
+                        'sans-jp': ['Noto Sans JP', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .traditional-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='0.05'%3E%3Cpath d='M30 30c0-16.569 13.431-30 30-30v60c-16.569 0-30-13.431-30-30zM0 30c0 16.569 13.431 30 30 30V0C13.431 0 0 13.431 0 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+       
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(6, 78, 59, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-sage-light to-emerald-50 font-sans-jp">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-emerald-deep to-charcoal-dark text-white shadow-xl">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="text-3xl font-japanese font-bold">🌿</div>
+                    <div>
+                        <h1 class="text-2xl font-japanese font-bold">Niche Japan</h1>
+                        <p class="text-coral-warm text-sm">Discover Deep Japan</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="/website/nichejapan/index.html" class="hover:text-coral-warm transition-colors">ホーム</a>
+                    <a href="#categories" class="hover:text-coral-warm transition-colors">カテゴリー</a>
+                    <a href="/website/nichejapan/interview/index.html" class="hover:text-coral-warm transition-colors">インタビュー</a>
+                    <a href="#contact" class="hover:text-coral-warm transition-colors">お問い合わせ</a>
+                </nav>
+                <button class="md:hidden text-coral-warm">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+<!-- Hero Section -->
+<section id="home" class="traditional-pattern py-20">
+  <div class="container max-w-3xl mx-auto px-6">
+    
+    <!-- 見出し -->
+    <h2 class="text-3xl font-japanese font-bold text-emerald-deep text-center mb-12">オノマトペとは？日本語の豊かさを感じる言葉の世界</h2>
+
+    <!-- 説明文 -->
+    <p class="text-charcoal/80 mb-6">
+      日本語でよく使われる「ドキドキ」「ワクワク」「ゴロゴロ」といった言葉があります。<br>
+      ・「ドキドキ」は、緊張や興奮で心臓が速く打つ様子を表します。<br>
+      ・「ワクワク」は、楽しみや期待で胸が高鳴る様子を表します。<br>
+      ・「ゴロゴロ」は、横になってくつろぐ様子や雷の鳴る音などを表します。<br>
+      これらはすべて オノマトペ と呼ばれる表現です。<br>
+      日本語は世界の中でも特にオノマトペが豊富な言語の一つとされており、その数は数千種類にのぼると言われています。この記事では、このオノマトペについてわかりやすく紹介します。
+    </p>
+
+    <!-- グリッドレイアウト -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+      <!-- テキストセクション -->
+      <div>
+
+        <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">終身雇用制度</h3>
+        <p class="text-charcoal/80 mb-6">
+          終身雇用制度は、日本の企業文化を象徴する制度の一つで、従業員が定年まで同じ会社で働くことを前提としています。この制度は企業が長期的な雇用を保証し、従業員に会社への帰属意識を育むことを目的としています。しかし近年、多様な働き方が増え、柔軟な人材配置や成果主義の導入が求められるようになり、その制度は見直されつつあります。
+        </p>
+
+      </div>
+
+<!-- 画像セクション -->
+<div class="relative rounded-xl overflow-hidden shadow-xl w-full aspect-[4/3]">
+  <img src="female.png" class="w-full h-full object-cover">
+</div>
+
+    </div>
+
+    <!-- その他の雇用制度 -->
+      <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">年功序列</h3>
+      <p class="text-charcoal/80 mb-6">
+        年功序列は、従業員の昇進や給与が勤続年数に基づいて決定される制度です。長期的な雇用が見込めるため、従業員は安心して働き、将来の計画を立てやすくなります。長年にわたって同じ組織で働くことで、豊富な経験と知識が蓄積され、それが組織の発展に活かされます。このような環境では、長期的な視点を持ち、じっくりとキャリアを築くことが求められます。
+      </p>
+      
+    <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">新卒一括採用</h3>
+    <p class="text-charcoal/80 mb-6">
+      日本の企業は、新卒一括採用を行うことが一般的です。毎年春に大学を卒業する学生を一斉に採用し、同時期に入社します。これにより、同期の絆が深まり、一括研修を通じて時間やリソースが効率的に活用されるため、職場内のサポート体制が強化されます。
+    </p>
+
+    <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">メンバーシップ型雇用</h3>
+    <p class="text-charcoal/80 mb-6">
+      主に欧米諸国で採用されるジョブ型雇用とは異なり、日本の企業ではメンバーシップ型雇用が採用されています。特定の職務に限定されず、企業全体の一員として雇用される形態です。従業員は様々な部署や役割を経験し、企業全体の成長に貢献することが期待されます。これにより、柔軟な人材配置が可能となり、企業の競争力が向上します。
+    </p>
+
+    <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">研修制度</h3>
+    <p class="text-charcoal/80 mb-6">
+      日本の企業は長期雇用を前提とし、将来を見据えた視点で従業員を育成することが一般的です。年齢を重ねるにつれて、実務経験やマネジメント能力がより重要視される傾向があります。
+    </p>
+
+    <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">時間管理</h3>
+    <p class="text-charcoal/80 mb-6">
+      日本の企業文化には、時間管理が重要視されています。多くの従業員が定時を過ぎても働くことがあり、残業が発生することも少なくありません。また、日本では遅刻が厳しく禁じられており、時間厳守が強く求められます。しかし、近年では働き方改革が進められ、長時間労働の是正やワークライフバランスの向上が求められています。
+    </p>
+
+    <!-- 総括 -->
+    <p class="text-charcoal/80 mb-6">
+      日本の雇用文化は、他国とは異なる独自の制度や慣習が根付いており、長期的な関係性や安定したキャリア形成を重視する傾向があります。これらの制度のもとでは、企業内での経験やスキルの蓄積が重視されています。そのため、日本の労働環境を深く理解し、自身のキャリアを築くための選択肢を慎重に考えることが重要です。
+    </p>
+
+  </div>
+</section>
+
+<!-- Categories -->
+<section id="categories" class="py-16 bg-gradient-to-r from-sage-light to-emerald-50">
+    <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-japanese font-bold text-emerald-deep text-center mb-12">カテゴリー別記事一覧</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <a href="/website/nichejapan/category/habits/index.html" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">🙏</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">習慣・マナー</h4>
+                <p class="text-slate-elegant text-sm">日本独特のマナーや暗黙のルールを詳しく解説</p>
+            </a>
+
+            <a href="/website/nichejapan/category/festivals/index.html" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">🎋</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">伝統行事・イベント</h4>
+                <p class="text-slate-elegant text-sm">季節の行事や地域の祭りの深い意味を探る</p>
+            </a>
+
+            <a href="/website/nichejapan/category/food/index.html" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">🍱</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">食文化の奥深さ</h4>
+                <p class="text-slate-elegant text-sm">料理の背景にある歴史や地域性を紐解く</p>
+            </a>
+
+            <a href="/website/nichejapan/category/recruit/index.html" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">💼</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">就職・転職</h4>
+                <p class="text-slate-elegant text-sm">転職ノウハウや日本・海外の雇用文化を紹介</p>
+            </a>
+
+            <a href="/website/nichejapan/category/history/index.html" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">📜</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">歴史背景と由来</h4>
+                <p class="text-slate-elegant text-sm">現代に残る文化のルーツを歴史から読み解く</p>
+            </a>
+
+            <a href="/website/nichejapan/category/language/index.html" class="block bg-white rounded-lg p-6 shadow-lg hover-lift border border-gray-100 transition-transform hover:scale-105">
+                <div class="text-3xl mb-4">🗣️</div>
+                <h4 class="text-xl font-semibold text-emerald-deep mb-2">言葉・オノマトペ</h4>
+                <p class="text-slate-elegant text-sm">日本語の奥深さと表現の豊かさを探求</p>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Parallax Banner -->
+    <section class="parallax relative h-80 bg-cover bg-center flex items-center" style="background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1920\' height=\'500\' viewBox=\'0 0 1920 500\'><rect width=\'1920\' height=\'500\' fill=\'%230A2342\'/><circle cx=\'960\' cy=\'250\' r=\'200\' fill=\'%23D4AF37\' fill-opacity=\'0.1\'/><circle cx=\'960\' cy=\'250\' r=\'150\' fill=\'%23D4AF37\' fill-opacity=\'0.1\'/><circle cx=\'960\' cy=\'250\' r=\'100\' fill=\'%23D4AF37\' fill-opacity=\'0.1\'/><path d=\'M0,500 C400,400 800,450 1200,400 C1600,350 1920,400 1920,400 L1920,500 L0,500 Z\' fill=\'%23D4AF37\' fill-opacity=\'0.2\'/><path d=\'M0,500 C600,450 1000,400 1400,450 C1800,500 1920,450 1920,450 L1920,500 L0,500 Z\' fill=\'%23D4AF37\' fill-opacity=\'0.1\'/></svg>')">
+        <div class="absolute inset-0 bg-darkblue/50"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
+                あなたの<span class="text-yellow-400">グローバルキャリア</span>を実現する第一歩
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+                語学力を活かした新たなキャリアが、あなたを待っています。
+                専門アドバイザーが、あなたの可能性を最大限に引き出します。
+            </p>
+            <a href="/website/candidate/index.html" target="_blank" class="btn-yellow-400 bg-yellow-400 text-darkblue font-medium py-3 px-8 rounded-md text-center shadow-lg inline-block">
+                無料相談・登録はこちら
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="flex justify-center">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe09vL4pHjHkOlFgBUTrKH4a5wqYVKbKnbY4vvu9GM39kNbIw/viewform?embedded=true" width="640" height="751" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('お問い合わせありがとうございます。内容を確認後、ご連絡いたします。');
+            this.reset();
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96409e5fc2b9fc9a',t:'MTc1MzMzMDc2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
