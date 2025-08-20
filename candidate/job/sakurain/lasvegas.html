@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARUKAS CAREER | グローバル人材専門の転職エージェント</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        darkblue: '#0A2342',
+                        cream: '#F8F5F0',
+                        charcoal: '#333333',
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #F8F5F0;
+            color: #333333;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(10, 35, 66, 0.85) 0%, rgba(10, 35, 66, 0.7) 100%);
+        }
+        .gold-underline {
+            position: relative;
+        }
+        .gold-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background-color: #D4AF37;
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .btn-gold {
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            background-color: #0A2342;
+            color: #D4AF37;
+        }
+        .stats-item {
+            position: relative;
+        }
+        .stats-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background-color: rgba(212, 175, 55, 0.3);
+        }
+        @media (max-width: 768px) {
+            .stats-item:not(:last-child)::after {
+                display: none;
+            }
+        }
+        .image-overlay {
+            position: relative;
+        }
+        .image-overlay::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(10, 35, 66, 0.1), rgba(10, 35, 66, 0.6));
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card:hover .feature-image {
+            transform: scale(1.05);
+        }
+        .feature-image {
+            transition: transform 0.5s ease;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- Navigation -->
+    <nav class="bg-white text-darkblue shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="/website/candidate/index.html" class="flex items-center">
+                    <!-- ロゴ画像は高さを固定 -->
+                    <img src="/website/logo.png" alt="ARUKAS CAREER ロゴ" class="h-12 w-auto">
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="/website/candidate/index.html" class="nav-link font-medium">求職者の方へ</a>
+                <a href="/website/recruiter/index.html" class="nav-link font-medium">採用企業様へ</a>
+                <a href="/website/nichejapan/index.html" target="_blank" class="nav-link font-medium flex items-center gap-1">日本文化の情報発信サイト「Niche Japan」
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="6" width="14" height="14" rx="2" fill="#B0BEC5"/>
+                        <rect x="6" y="3" width="15" height="15" rx="2" fill="#ECEFF1"/>
+                        <path d="M14 5h5v5h-2V8.41l-6.3 6.3-1.4-1.41 6.3-6.3H14V5z" fill="#000000"/>
+                        </svg>
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-charcoal focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 py-2 space-y-3">
+                <a href="/website.candidate/index.html" class="nav-link font-medium">求職者の方へ</a>
+                <a href="/website/recruiterindex.html" class="nav-link font-medium">採用企業様へ</a>
+                <a href="/website/nichejapan/index.html" class="nav-link font-medium">日本文化の情報発信サイト「Niche Japan」</a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section id="home" class="bg-white py-20">
+  <div class="container max-w-3xl mx-auto px-6">
+    
+    <!-- 見出し -->
+    <h2 class="mt-12 text-3xl md:text-5xl font-japanese font-bold text-emerald-deep mb-6 text-center">
+      企画営業リーダー候補/オフィスマネージャー
+    </h2>
+    
+    <!-- 求人内容 -->
+    <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">業務詳細</h3>
+    <p class="text-charcoal/80 mb-6">
+      主にアメリカでの展示会に出展される日系企業を中心に、企画提案から制作進行管理、運営のサポート等を行っていただきます。
+    </p>
+
+    <h3 class="text-2xl font-serif font-bold text-darkblue mb-4">対象となる方</h3>
+    <p class="text-charcoal/80 mb-6">
+      イベントや展示会、国際会議等の企画提案のご経験がある方
+    </p>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white text-darkblue py-12 px-4">
+      <div class="container mx-auto">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="mb-6 md:mb-0 flex flex-col items-center md:items-start">
+              <!-- ロゴ画像（高さを調整） -->
+              <img src="/website/logo.png" alt="ARUKAS CAREER ロゴ" class="h-10 w-auto mb-2">
+              </div>
+          </div>
+          <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+              <a href="https://career.sakurain.co.jp/policy/" class="hover:text-gold transition-colors">求人･求職者の皆様へ</a>
+              <a href="https://career.sakurain.co.jp/privacy/" class="hover:text-gold transition-colors"> 個人情報の取扱いについて</a>
+              <a href="https://career.sakurain.co.jp/terms/" class="hover:text-gold transition-colors">利用規約</a>
+              <a href="https://www.sakurain.co.jp/privacyPolicy/?_ga=2.210146133.1754386174.1753166003-1342308711.1742271207" class="hover:text-gold transition-colors">個人情報保護方針</a>
+              <a href="https://career.sakurain.co.jp/margin/" class="hover:text-gold transition-colors">マージン率等の情報提供</a>
+          </div>
+      </div>
+      <hr class="my-8 border-gray-700">
+      <div class="text-center text-gray-400 text-sm">
+          &copy; Copyright(c) 2025 Sakura International Inc. All rights reserved.
+      </div>
+</footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real implementation, you would send the form data to a server
+            // For this demo, we'll just show the success message
+            formSuccess.classList.remove('hidden');
+            contactForm.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                formSuccess.classList.add('hidden');
+            }, 5000);
+        });
+
+        // Add fixed header shadow on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9630b33fa1fa1532',t:'MTc1MzE2Mzg0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
